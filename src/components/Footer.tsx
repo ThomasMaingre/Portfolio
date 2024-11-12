@@ -40,7 +40,7 @@ export default function Footer() {
               </p>
               <li><strong>Propriétaire :</strong> Thomas MAINGRE</li>
               <li><strong>Contact :</strong> thomas.maingre@gmail.com</li>
-              <li><strong>Hébergeur :</strong> VPS - Ionos </li>
+              <li><strong>Hébergeur :</strong> Vercel </li>
               <li><strong>Délégué à la protection des données :</strong> Thomas Maingre - thomas.maingre@gmail.com</li>
 
               <h3 className="text-xl font-semibold mt-6" style={{ color: '#fad62b' }}>Conditions générales d&apos;utilisation du site et des services proposés</h3>
