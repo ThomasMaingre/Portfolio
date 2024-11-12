@@ -95,9 +95,10 @@ export default function SelfEvaluation() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Auto-évaluation</h2>
         <p className="text-xl mb-12 max-w-2xl mx-auto text-center">
-          Après deux ans d'expérience, voici une évaluation honnête de mes compétences et traits personnels,
-          mettant en lumière mes points forts et les domaines où je continue à m'améliorer.
+          Après deux ans d&apos;expérience, voici une évaluation honnête de mes compétences et traits personnels,
+          mettant en lumière mes points forts et les domaines où je continue à m&apos;améliorer.
         </p>
+
         <Tabs defaultValue="tools" className="w-full" onValueChange={setActiveTab}>
           <ScrollArea className="w-full whitespace-nowrap">
             <TabsList className="inline-flex w-full justify-start bg-gray-800 p-1">
@@ -111,11 +112,10 @@ export default function SelfEvaluation() {
                 <TabsTrigger
                   key={tab.id}
                   value={tab.id}
-                  className={`flex-1 whitespace-nowrap px-6 py-2 text-sm font-medium transition-colors duration-200 ${
-                    activeTab === tab.id
+                  className={`flex-1 whitespace-nowrap px-6 py-2 text-sm font-medium transition-colors duration-200 ${activeTab === tab.id
                       ? "bg-black text-[#fad62b]"
                       : "text-gray-400 hover:text-white"
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </TabsTrigger>

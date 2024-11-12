@@ -35,7 +35,6 @@ export default function SkillsScroller() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center text-white">Mes Compétences</h2>
 
-        {/* Wrapper for scrolling content with hover effect to stop animation */}
         <div
           className="relative overflow-hidden"
           style={{
@@ -60,13 +59,16 @@ export default function SkillsScroller() {
                   animationPlayState: 'paused'
                 }}
                 onMouseEnter={(e) => {
-                  // Stop the scrolling animation on hover
-                  e.currentTarget.parentElement.style.animationPlayState = 'paused';
+                  if (e.currentTarget.parentElement) {
+                    e.currentTarget.parentElement.style.animationPlayState = 'paused';
+                  }
                 }}
                 onMouseLeave={(e) => {
-                  // Resume the scrolling animation when hover ends
-                  e.currentTarget.parentElement.style.animationPlayState = 'running';
+                  if (e.currentTarget.parentElement) {
+                    e.currentTarget.parentElement.style.animationPlayState = 'running';
+                  }
                 }}
+                
               >
                 <div className="bg-white rounded-lg p-4 flex flex-col items-center" >
                   <div className="relative w-16 h-16 mb-2">

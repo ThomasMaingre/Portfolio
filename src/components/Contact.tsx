@@ -26,7 +26,7 @@ export default function Contact() {
         'template_37hi5rt',
         {
           from_name: name,
-          to_name: "Thomas",  
+          to_name: "Thomas",
           message: message,
           reply_to: email
         },
@@ -48,10 +48,10 @@ export default function Contact() {
     <section id="contact" className="py-20 text-white" style={{ backgroundColor: '#0d1225' }}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Contact</h2>
-        
+
         <p className="text-xl mb-12 max-w-2xl mx-auto text-center">
-          Vous avez un projet passionnant ou une opportunité à discuter ? 
-          N'hésitez pas à me contacter, je serais ravi d'échanger avec vous !
+          Vous avez un projet passionnant ou une opportunité à discuter ?
+          N&apos;hésitez pas à me contacter, je serais ravi d&apos;échanger avec vous !
         </p>
 
         <div className="max-w-xl mx-auto mb-12">
@@ -92,8 +92,8 @@ export default function Contact() {
                 rows={5}
               />
             </div>
-            <Button 
-              type="submit" 
+            <Button
+              type="submit"
               disabled={isSubmitting}
               className="w-full bg-black hover:bg-gray-900"
             >
@@ -104,7 +104,7 @@ export default function Contact() {
               <p className="text-green-500 text-center">Message envoyé avec succès !</p>
             )}
             {submitStatus === 'error' && (
-              <p className="text-red-500 text-center">Erreur lors de l'envoi du message. Veuillez réessayer.</p>
+              <p className="text-red-500 text-center">Erreur lors de l&apos;envoi du message. Veuillez réessayer.</p>
             )}
           </form>
         </div>

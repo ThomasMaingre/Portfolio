@@ -7,6 +7,7 @@ import SkillsModal from './SkillsModal'
 
 interface Skill {
   name: string;
+  description: string;
   rating: number;
 }
 
