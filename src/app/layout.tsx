@@ -64,7 +64,7 @@ export default function RootLayout({
           property="og:description"
           content="Thomas MAINGRE est un développeur web Full Stack spécialisé dans la création de sites web performants et modernes. Découvrez ses compétences et ses projets."
         />
-        <meta property="og:image" content="/image/pictures/profil.jpg" />
+        <meta property="og:image" content="/image/backgrounds/apercu.png" />
         <meta property="og:url" content="https://thomasmaingre.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
