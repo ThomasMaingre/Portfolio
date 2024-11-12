@@ -60,6 +60,8 @@
 //   )
 // }
 
+'use client'
+
 import {
   Dialog,
   DialogContent,
@@ -93,7 +95,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent
+      <DialogContent 
         className="sm:max-w-[700px] max-h-[90vh] overflow-y-auto relative p-6"
         style={{ backgroundColor: '#9a9a9b' }}
       >
@@ -107,21 +109,21 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
           </Button>
         </DialogClose>
         <DialogHeader>
-          <DialogTitle className="text-2xl">{project.title}</DialogTitle>
-          <DialogDescription style={{ color: '#fad62b' }}>{project.description}</DialogDescription>
+          <DialogTitle className="text-2xl font-bold" style={{ color: '#fad62b' }}>{project.title}</DialogTitle>
+          <DialogDescription className="text-white">{project.description}</DialogDescription>
         </DialogHeader>
-        <div className="mt-4 space-y-4">
+        <div className="mt-4 space-y-4 text-white">
           <div>
             <h3 className="text-lg font-semibold mb-2">Présentation</h3>
-            <p className="text-sm text-white">{project.presentation}</p>
+            <p className="text-sm">{project.presentation}</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">Objectif</h3>
-            <p className="text-sm text-white">{project.objectif}</p>
+            <p className="text-sm">{project.objectif}</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">Conclusion</h3>
-            <p className="text-sm text-white">{project.conclusion}</p>
+            <p className="text-sm">{project.conclusion}</p>
           </div>
           <p className="mt-4">
             Technologies utilisées : <span style={{ color: '#fad62b' }}>{project.tech}</span>
