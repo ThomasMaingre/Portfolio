@@ -93,22 +93,24 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-y-auto relative" style={{ backgroundColor: '#9a9a9b' }}>
+      <DialogContent
+        className="sm:max-w-[700px] h-[calc(100vh-4rem)] mt-16 overflow-y-auto relative"
+        style={{ backgroundColor: '#9a9a9b' }}
+      >
         <DialogClose asChild>
           <Button
-            className="absolute right-4 top-4 rounded-full p-2 md:hidden"
-            variant="ghost"
+            className="absolute right-4 top-4 h-8 w-8 rounded-full bg-black hover:bg-gray-800 text-white"
             onClick={onClose}
           >
-            <X className="h-4 w-4" />
-            <span className="sr-only">Close</span>
+            <X className="h-5 w-5" />
+            <span className="sr-only">Fermer</span>
           </Button>
         </DialogClose>
-        <DialogHeader>
+        <DialogHeader className="mt-2">
           <DialogTitle className="text-2xl">{project.title}</DialogTitle>
           <DialogDescription style={{ color: '#fad62b' }}>{project.description}</DialogDescription>
         </DialogHeader>
-        <div className="mt-4">
+        <div className="mt-4 pb-6">
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold mb-2">Présentation</h3>
