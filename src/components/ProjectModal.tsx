@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { X } from "lucide-react"
+import { useEffect } from "react"
 
 interface Project {
   id: number;
@@ -29,33 +30,55 @@ interface ProjectModalProps {
 export default function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
   if (!project) return null;
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+    
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [isOpen]);
+
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-y-auto" style={{ backgroundColor: '#9a9a9b' }}>
-        <DialogHeader>
-          <DialogTitle className="text-2xl">{project.title}</DialogTitle>
-          <DialogDescription style={{ color: '#fad62b' }}>{project.description}</DialogDescription>
-        </DialogHeader>
-        <div className="mt-4">
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Présentation</h3>
-              <p className="text-sm text-white">{project.presentation}</p>
+    <>
+      <Dialog open={isOpen} onOpenChange={onClose}>
+        <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-y-auto" style={{ backgroundColor: '#9a9a9b' }}>
+          <DialogHeader>
+            <DialogTitle className="text-2xl">{project.title}</DialogTitle>
+            <DialogDescription style={{ color: '#fad62b' }}>{project.description}</DialogDescription>
+          </DialogHeader>
+          <div className="mt-4">
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Présentation</h3>
+                <p className="text-sm text-white">{project.presentation}</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Objectif</h3>
+                <p className="text-sm text-white">{project.objectif}</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Conclusion</h3>
+                <p className="text-sm text-white">{project.conclusion}</p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Objectif</h3>
-              <p className="text-sm text-white">{project.objectif}</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Conclusion</h3>
-              <p className="text-sm text-white">{project.conclusion}</p>
-            </div>
+            <p className="mt-4">
+              Technologies utilisées : <span style={{ color: '#fad62b' }}>{project.tech}</span>
+            </p>
           </div>
-          <p className="mt-4">
-            Technologies utilisées : <span style={{ color: '#fad62b' }}>{project.tech}</span>
-          </p>
-        </div>
-      </DialogContent>
-    </Dialog>
+        </DialogContent>
+      </Dialog>
+
+      <style jsx global>{`
+        @media (max-width: 768px) {
+          .modal-open .navbar {
+            display: none;
+          }
+        }
+      `}</style>
+    </>
   )
 }
