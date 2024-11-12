@@ -82,7 +82,7 @@ export default function Header() {
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          <Menu size={24} />
         </button>
 
         {isMenuOpen && (
