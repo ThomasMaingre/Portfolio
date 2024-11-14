@@ -30,7 +30,7 @@ Ce projet de **Portfolio** est une application web personnelle conçue pour pré
 1. Clonez le dépôt GitHub du portfolio :
 
     ```bash
-    git clone https://github.com/username/portfolio.git
+    git clone git@github.com:ThomasMaingre/Portfolio.git
     cd portfolio
     ```
 
