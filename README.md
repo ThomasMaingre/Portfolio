@@ -1,53 +1,36 @@
-# Portfolio 🌐
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Sommaire
+## Getting Started
 
-- [Aperçu](#aperçu)
-- [Caractéristiques principales](#caractéristiques-principales)
-- [Pré-requis](#pré-requis)
-- [Guide d'installation](#guide-dinstallation)
-- [Mode d'emploi](#mode-demploi)
+First, run the development server:
 
-## Aperçu
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Ce projet de **Portfolio** est une application web personnelle conçue pour présenter mes compétences et projets en développement web. Développée en Next.js et TypeScript, cette plateforme est rapide, responsive, et optimisée pour offrir une expérience utilisateur fluide.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Caractéristiques principales
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **Présentation des projets** : Affichage de projets avec des descriptions détaillées, des liens vers le code source et des aperçus visuels.
-- **Section "À propos de moi"** : Présentation de mon parcours, de mes compétences techniques, et de mon expérience professionnelle.
-- **Lien vers les réseaux sociaux** : Accès rapide aux profils sociaux pour faciliter la connexion et les opportunités de networking.
-- **Design moderne et responsive** : Interface utilisateur agréable, conçue avec Tailwind CSS pour s'adapter à tous les types d'écrans.
-- **Performance optimisée** : Chargement rapide et navigation fluide entre les pages.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Pré-requis
+## Learn More
 
-- Node.js version 14 ou plus
-- npm pour la gestion des dépendances
+To learn more about Next.js, take a look at the following resources:
 
-## Guide d'installation
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. Clonez le dépôt GitHub du portfolio :
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-    ```bash
-    git clone git@github.com:ThomasMaingre/Portfolio.git
-    cd portfolio
-    ```
+## Deploy on Vercel
 
-2. Installez les dépendances du projet :
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-    ```bash
-    npm install
-    ```
-
-## Mode d'emploi
-
-### Lancer le projet en mode développement
-
-1. Dans le répertoire racine du projet, exécutez la commande suivante pour démarrer le serveur de développement :
-
-    ```bash
-    npm run start
-    ```
-
-2. Ouvrez votre navigateur et rendez-vous à l'adresse `http://localhost:3000` pour voir le portfolio en action.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

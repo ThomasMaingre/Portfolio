@@ -51,11 +51,6 @@ export default function Projects() {
           rating: 4
         },
         {
-          name: "Intégration API",
-          description: "Très à l'aise avec l'intégration d'API, capable de gérer et manipuler les données efficacement dans l’application.",
-          rating: 5
-        },
-        {
           name: "Chef de projet",
           description: "Bonne organisation et coordination des tâches, permettant d’atteindre les objectifs du projet avec succès.",
           rating: 4
@@ -161,11 +156,6 @@ export default function Projects() {
           name: "Dévelopement Mobile",
           description: "L'objectif était de recréer les fonctionnalités de base de Snapchat pour comprendre le développement d'applications mobiles.",
           rating: 4
-        },
-        {
-          name: "Design UI/UX",
-          description: "Conception d'interfaces utilisateur intuitives et expérience utilisateur optimisée pour les applications mobiles.",
-          rating: 3
         },
         {
           name: "Intégration API",
