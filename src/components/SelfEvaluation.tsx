@@ -51,7 +51,7 @@ const software: Skill[] = [
 
 const personalTraits: PersonalTrait[] = [
   { name: "Curiosité", description: "Toujours désireux d'apprendre de nouvelles technologies", isStrength: true },
-  { name: "Résilience", description: "Ma résilience est ma plus grande force : malgré les épreuves, je garde la tête haute et avance avec détermination.", isStrength: true },
+  { name: "Résilience", description: "Ma résilience est ma plus grande force. Malgré les épreuves, je garde la tête haute et avance avec détermination.", isStrength: true },
   { name: "Travail d'équipe", description: "Collabore efficacement dans des équipes multidisciplinaires", isStrength: true },
   { name: "Gestion du temps", description: "Parfois des difficultés à prioriser les tâches", isStrength: false },
   { name: "Communication", description: "Capable de vulgariser des concepts techniques", isStrength: true },
@@ -100,7 +100,7 @@ export default function SelfEvaluation() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Auto-évaluation</h2>
         <p className="text-xl mb-12 max-w-2xl mx-auto text-center">
-          Après deux ans d'expérience, voici une évaluation honnête de mes compétences et traits personnels,
+          Après un peu plus de deux ans d'expérience, voici une évaluation honnête de mes compétences et traits personnels,
           mettant en lumière mes points forts et les domaines où je continue à m'améliorer.
         </p>
         <Tabs defaultValue="tools" className="w-full" onValueChange={setActiveTab}>
