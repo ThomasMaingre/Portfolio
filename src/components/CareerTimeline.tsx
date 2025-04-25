@@ -28,9 +28,15 @@ const timelineEvents: TimelineEvent[] = [
     icon: 'briefcase'
   },
   {
-    year: "2022 - Aujourd'hui",
-    title: "Web@cadémie by Epitech ",
+    year: "2022 - 2024",
+    title: "Web@cadémie by Epitech",
     description: "Mes deux années à la Web@cadémie ont marqué le début de mon parcours en développement web. J'y ai appris les bases du codage, des langages et des outils essentiels pour le développement web, tout en me familiarisant avec la résolution de problèmes complexes. Cette formation intensive m’a permis de gagner en autonomie et en compétences techniques, me conduisant aujourd'hui à travailler en alternance en tant que développeur web média et à évoluer vers des responsabilités en gestion de projets.",
+    icon: 'code'
+  },
+  {
+    year: "2024 - Aujourd'hui",
+    title: "Nexa Digital School",
+    description: "Depuis décembre, j’ai intégré Nexa Digital School pour une durée d’un an dans le but d’obtenir ma licence en développement web (Bac +3). Cette année de spécialisation me permet d’approfondir mes compétences en développement back-end, avec un accent particulier sur le langage Java. Au sein de cette formation, je travaille régulièrement sur des projets concrets en Java, allant de la programmation orientée objet à l’intégration d’outils professionnels tels que Spring Boot ou Hibernate. Mon objectif est d’élargir mon expertise technique tout en consolidant mes bases pour devenir un développeur complet, capable de répondre aux exigences du monde professionnel.",
     icon: 'code'
   },
 ]

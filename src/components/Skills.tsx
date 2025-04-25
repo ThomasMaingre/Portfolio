@@ -15,6 +15,7 @@ const skills: Skill[] = [
   { name: 'PHP', icon: '/image/techno/php.png' },
   { name: 'Laravel', icon: '/image/techno/laravel.png' },
   { name: 'Symfony', icon: '/image/techno/symfony.png' },
+  { name: 'Java', icon: '/image/techno/java.png' },
   { name: 'JavaScript', icon: '/image/techno/js.png' },
   { name: 'TypeScript', icon: '/image/techno/typescript.png' },
   { name: 'React', icon: '/image/techno/react.png' },

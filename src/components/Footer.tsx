@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="bg-background text-foreground py-8" style={{ backgroundColor: '#0d1225' }}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-white">
-        <p className="mb-4 md:mb-0">© 2024 MAINGRE Thomas. Tous droits réservés.</p>
+        <p className="mb-4 md:mb-0">© 2025 MAINGRE Thomas. Tous droits réservés.</p>
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
           <Button variant="link" className="text-white hover:text-yellow-300" onClick={() => setIsLegalNoticeOpen(true)}>Mentions légales</Button>
           <Button variant="link" className="text-white hover:text-yellow-300" onClick={() => setIsPrivacyPolicyOpen(true)}>Politique de confidentialité</Button>
@@ -85,7 +85,7 @@ export default function Footer() {
 
               <h3 className="text-xl font-semibold mt-6" style={{ color: '#fad62b' }}>Droit applicable et attribution de juridiction</h3>
               <p>
-                Tout litige en relation avec l’utilisation du site <a href="https://thomasmaingre.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fad62b', textDecoration: 'none' }}>thomasmaingre.com</a> est soumis au droit français. En cas de litige, compétence exclusive est attribuée aux tribunaux compétents de la ville du Pradet dans le Var.
+                Tout litige en relation avec l’utilisation du site <a href="https://thomasmaingre.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fad62b', textDecoration: 'none' }}>thomasmaingre.com</a> est soumis au droit français. En cas de litige, compétence exclusive est attribuée aux tribunaux compétents de la ville des Arcs-sur-Argens dans le Var.
               </p>
 
             </DialogDescription>
@@ -100,7 +100,7 @@ export default function Footer() {
             <DialogDescription className="text-lg space-y-4 text-white">
               <h3 className="text-xl font-semibold" style={{ color: '#fad62b' }}>Introduction</h3>
               <p>
-                Je m'appelle Thomas Maingre et je suis en fin de formation BAC+2 à la Web@cademie d'Epitech. Ce site <a href="https://thomasmaingre.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fad62b', textDecoration: 'none' }}>thomasmaingre.com</a> est mon portfolio personnel utilisé pour présenter mes compétences et projets dans le cadre de mes études. Je n'ai pas d'entreprise personnelle et ne gagne aucune rémunération avec ce portfolio.
+                Je m'appelle Thomas Maingre et je suis en formation BAC+3 à Nexa Digital School. Ce site <a href="https://thomasmaingre.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fad62b', textDecoration: 'none' }}>thomasmaingre.com</a> est mon portfolio personnel utilisé pour présenter mes compétences et projets dans le cadre de mes études. Je n'ai pas d'entreprise personnelle et ne gagne aucune rémunération avec ce portfolio.
               </p>
 
               <h3 className="text-xl font-semibold mt-6" style={{ color: '#fad62b' }}>Identité du responsable de traitement</h3>

@@ -29,7 +29,8 @@ const languages: Skill[] = [
   { name: "JavaScript", level: 80, description: "Langage principal, ES6+" },
   { name: "TypeScript", level: 70, description: "Typage statique pour JavaScript" },
   { name: "PHP", level: 80, description: "Langage backend pour des applications web robustes" },
-  { name: "HTML/CSS", level: 90, description: "Bases solides pour le développement frontend" }
+  { name: "HTML/CSS", level: 90, description: "Bases solides pour le développement frontend" },
+  { name: "Java", level: 40, description: "Langage backend orienté objet, fiable et polyvalent" }
 ]
 
 const frameworks: Skill[] = [
@@ -42,11 +43,15 @@ const frameworks: Skill[] = [
 ]
 
 const software: Skill[] = [
-  { name: "VS Code", level: 90, description: "Éditeur de code principal" },
+  { name: "VS Code", level: 90, description: "Éditeur de code principal" }, 
+  { name: "IntelliJ IDEA", level: 50, description: "IDE pour développer en Java avec confort et productivité" },
+
+
 ]
 
 const personalTraits: PersonalTrait[] = [
   { name: "Curiosité", description: "Toujours désireux d'apprendre de nouvelles technologies", isStrength: true },
+  { name: "Résilience", description: "Ma résilience est ma plus grande force : malgré les épreuves, je garde la tête haute et avance avec détermination.", isStrength: true },
   { name: "Travail d'équipe", description: "Collabore efficacement dans des équipes multidisciplinaires", isStrength: true },
   { name: "Gestion du temps", description: "Parfois des difficultés à prioriser les tâches", isStrength: false },
   { name: "Communication", description: "Capable de vulgariser des concepts techniques", isStrength: true },
