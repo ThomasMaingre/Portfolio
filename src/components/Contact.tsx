@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Send } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import Input from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import emailjs from '@emailjs/browser'
@@ -26,7 +26,7 @@ export default function Contact() {
         'template_37hi5rt',
         {
           from_name: name,
-          to_name: "Thomas",  
+          to_name: "Thomas",
           message: message,
           reply_to: email
         },
@@ -48,9 +48,9 @@ export default function Contact() {
     <section id="contact" className="py-20 text-white" style={{ backgroundColor: '#0d1225' }}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Contact</h2>
-        
+
         <p className="text-xl mb-12 max-w-2xl mx-auto text-center">
-          Vous avez un projet passionnant ou une opportunité à discuter ? 
+          Vous avez un projet passionnant ou une opportunité à discuter ?
           N'hésitez pas à me contacter, je serais ravi d'échanger avec vous !
         </p>
 
@@ -92,8 +92,8 @@ export default function Contact() {
                 rows={5}
               />
             </div>
-            <Button 
-              type="submit" 
+            <Button
+              type="submit"
               disabled={isSubmitting}
               className="w-full bg-black hover:bg-gray-900"
             >
