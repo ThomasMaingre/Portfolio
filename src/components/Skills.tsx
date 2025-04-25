@@ -4,8 +4,6 @@ import Image from 'next/image';
 interface Skill {
   name: string;
   icon: string;
-  rating?: number;
-  description?: string;
 }
 
 const skills: Skill[] = [
@@ -28,7 +26,6 @@ const skills: Skill[] = [
   { name: 'NestJS', icon: '/image/techno/nestjs.png' },
   { name: 'MySQL', icon: '/image/techno/mySql.png' },
   { name: 'MongoDB', icon: '/image/techno/mongo.png' },
-
 ];
 
 export default function SkillsScroller() {
@@ -37,19 +34,10 @@ export default function SkillsScroller() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center text-white">Mes Compétences</h2>
 
-        {/* Wrapper for scrolling content with hover effect to stop animation */}
-        <div
-          className="relative overflow-hidden"
-          style={{
-            display: 'flex',
-            overflow: 'hidden',
-            whiteSpace: 'nowrap',
-          }}
-        >
+        <div className="relative overflow-hidden whitespace-nowrap">
           <div
-            className="flex whitespace-nowrap"
+            className="flex"
             style={{
-              display: 'flex',
               animation: 'scroll 20s linear infinite',
               animationPlayState: 'running',
             }}
@@ -58,25 +46,26 @@ export default function SkillsScroller() {
               <div
                 key={index}
                 className="flex-shrink-0 w-40 mx-4 transition-transform duration-300 ease-out hover:scale-110"
-                style={{
-                  animationPlayState: 'paused'
-                }}
                 onMouseEnter={(e) => {
-                  // Stop the scrolling animation on hover
-                  e.currentTarget.parentElement.style.animationPlayState = 'paused';
+                  const parent = e.currentTarget.parentElement;
+                  if (parent) {
+                    parent.style.animationPlayState = 'paused';
+                  }
                 }}
                 onMouseLeave={(e) => {
-                  // Resume the scrolling animation when hover ends
-                  e.currentTarget.parentElement.style.animationPlayState = 'running';
+                  const parent = e.currentTarget.parentElement;
+                  if (parent) {
+                    parent.style.animationPlayState = 'running';
+                  }
                 }}
               >
-                <div className="bg-white rounded-lg p-4 flex flex-col items-center" >
+                <div className="bg-white rounded-lg p-4 flex flex-col items-center">
                   <div className="relative w-16 h-16 mb-2">
                     <Image
                       src={skill.icon}
                       alt={skill.name}
-                      layout="fill"
-                      objectFit="contain"
+                      fill
+                      style={{ objectFit: 'contain' }}
                     />
                   </div>
                   <span className="text-sm font-semibold text-black">{skill.name}</span>
@@ -87,13 +76,12 @@ export default function SkillsScroller() {
         </div>
       </div>
 
-      {/* Keyframes for continuous scroll animation */}
       <style jsx>{`
-          @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-        `}</style>
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
     </section>
   );
 }
