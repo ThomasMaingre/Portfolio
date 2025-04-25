@@ -4,6 +4,8 @@ import Image from 'next/image';
 interface Skill {
   name: string;
   icon: string;
+  rating?: number;
+  description?: string;
 }
 
 const skills: Skill[] = [
