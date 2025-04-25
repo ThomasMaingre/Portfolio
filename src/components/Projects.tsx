@@ -8,7 +8,9 @@ import SkillsModal from './SkillsModal'
 interface Skill {
   name: string;
   rating: number;
+  description: string;
 }
+
 
 interface Project {
   id: number;
